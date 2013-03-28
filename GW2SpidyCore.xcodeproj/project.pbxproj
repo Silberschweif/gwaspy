@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A1B7EE9169B7A6400B4418A /* GW2SpidyType.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1B7EE7169B7A6400B4418A /* GW2SpidyType.h */; };
+		0A1B7EEA169B7A6400B4418A /* GW2SpidyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B7EE8169B7A6400B4418A /* GW2SpidyType.m */; };
+		0A1B7EEB169B7A6400B4418A /* GW2SpidyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B7EE8169B7A6400B4418A /* GW2SpidyType.m */; };
+		0A355020169B2F6C0000A40B /* GW2SpidyItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A35501E169B2F6C0000A40B /* GW2SpidyItem.h */; };
+		0A355021169B2F6C0000A40B /* GW2SpidyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35501F169B2F6C0000A40B /* GW2SpidyItem.m */; };
+		0A355022169B2F6C0000A40B /* GW2SpidyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35501F169B2F6C0000A40B /* GW2SpidyItem.m */; };
+		0A6199FF167BD65B0031D3C2 /* GW2SpidyClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6199FD167BD65B0031D3C2 /* GW2SpidyClient.h */; };
+		0A619A00167BD65B0031D3C2 /* GW2SpidyClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6199FE167BD65B0031D3C2 /* GW2SpidyClient.m */; };
+		0A619A01167BD65B0031D3C2 /* GW2SpidyClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6199FE167BD65B0031D3C2 /* GW2SpidyClient.m */; };
+		0A619A0F167BDA440031D3C2 /* GW2SpidyObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A619A0D167BDA440031D3C2 /* GW2SpidyObject.h */; };
+		0A619A10167BDA440031D3C2 /* GW2SpidyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A619A0E167BDA440031D3C2 /* GW2SpidyObject.m */; };
+		0A619A11167BDA440031D3C2 /* GW2SpidyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A619A0E167BDA440031D3C2 /* GW2SpidyObject.m */; };
+		0A619A18167BDC6A0031D3C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A619A17167BDC6A0031D3C2 /* CoreData.framework */; };
+		0A619A1A167BDC7F0031D3C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A619A19167BDC7F0031D3C2 /* CoreData.framework */; };
+		0AF3222A1677FDC4007401B1 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF322261677FD5A007401B1 /* RestKit.framework */; };
+		0AF3222B1677FDC9007401B1 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF322221677FD5A007401B1 /* libRestKit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AF322211677FD5A007401B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AF322171677FD5A007401B1 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		0AF322231677FD5A007401B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AF322171677FD5A007401B1 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		0AF322251677FD5A007401B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AF322171677FD5A007401B1 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		0AF322271677FD5A007401B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AF322171677FD5A007401B1 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A4B24561677F7F90000E91E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A1B7EE7169B7A6400B4418A /* GW2SpidyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GW2SpidyType.h; sourceTree = "<group>"; };
+		0A1B7EE8169B7A6400B4418A /* GW2SpidyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GW2SpidyType.m; sourceTree = "<group>"; };
+		0A35501E169B2F6C0000A40B /* GW2SpidyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GW2SpidyItem.h; sourceTree = "<group>"; };
+		0A35501F169B2F6C0000A40B /* GW2SpidyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GW2SpidyItem.m; sourceTree = "<group>"; };
+		0A4B24411677F7EA0000E91E /* libgw2spidycore-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libgw2spidycore-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4B24581677F7F90000E91E /* libgw2spidycore-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libgw2spidycore-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4B24651677F8580000E91E /* gw2spidycore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gw2spidycore-Prefix.pch"; sourceTree = "<group>"; };
+		0A6199FD167BD65B0031D3C2 /* GW2SpidyClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GW2SpidyClient.h; sourceTree = "<group>"; };
+		0A6199FE167BD65B0031D3C2 /* GW2SpidyClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GW2SpidyClient.m; sourceTree = "<group>"; };
+		0A619A02167BD68E0031D3C2 /* GW2Spidy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GW2Spidy.h; sourceTree = "<group>"; };
+		0A619A0D167BDA440031D3C2 /* GW2SpidyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GW2SpidyObject.h; sourceTree = "<group>"; };
+		0A619A0E167BDA440031D3C2 /* GW2SpidyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GW2SpidyObject.m; sourceTree = "<group>"; };
+		0A619A17167BDC6A0031D3C2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		0A619A19167BDC7F0031D3C2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		0AF322171677FD5A007401B1 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = dependencies/RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A4B243E1677F7EA0000E91E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A619A18167BDC6A0031D3C2 /* CoreData.framework in Frameworks */,
+				0AF3222A1677FDC4007401B1 /* RestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A4B24551677F7F90000E91E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A619A1A167BDC7F0031D3C2 /* CoreData.framework in Frameworks */,
+				0AF3222B1677FDC9007401B1 /* libRestKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A4B24281677F7A80000E91E = {
+			isa = PBXGroup;
+			children = (
+				0AF322171677FD5A007401B1 /* RestKit.xcodeproj */,
+				0A4B24651677F8580000E91E /* gw2spidycore-Prefix.pch */,
+				0AF3222D1677FE60007401B1 /* Code */,
+				0A4B24431677F7EA0000E91E /* Frameworks */,
+				0A4B24421677F7EA0000E91E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A4B24421677F7EA0000E91E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A4B24411677F7EA0000E91E /* libgw2spidycore-OSX.a */,
+				0A4B24581677F7F90000E91E /* libgw2spidycore-iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A4B24431677F7EA0000E91E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A619A19167BDC7F0031D3C2 /* CoreData.framework */,
+				0A619A17167BDC6A0031D3C2 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AF322181677FD5A007401B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AF322221677FD5A007401B1 /* libRestKit.a */,
+				0AF322241677FD5A007401B1 /* RestKitTests.octest */,
+				0AF322261677FD5A007401B1 /* RestKit.framework */,
+				0AF322281677FD5A007401B1 /* RestKitFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AF3222D1677FE60007401B1 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				0A619A02167BD68E0031D3C2 /* GW2Spidy.h */,
+				0A6199FD167BD65B0031D3C2 /* GW2SpidyClient.h */,
+				0A6199FE167BD65B0031D3C2 /* GW2SpidyClient.m */,
+				0A619A0D167BDA440031D3C2 /* GW2SpidyObject.h */,
+				0A619A0E167BDA440031D3C2 /* GW2SpidyObject.m */,
+				0A35501E169B2F6C0000A40B /* GW2SpidyItem.h */,
+				0A35501F169B2F6C0000A40B /* GW2SpidyItem.m */,
+				0A1B7EE7169B7A6400B4418A /* GW2SpidyType.h */,
+				0A1B7EE8169B7A6400B4418A /* GW2SpidyType.m */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A4B243F1677F7EA0000E91E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A6199FF167BD65B0031D3C2 /* GW2SpidyClient.h in Headers */,
+				0A619A0F167BDA440031D3C2 /* GW2SpidyObject.h in Headers */,
+				0A355020169B2F6C0000A40B /* GW2SpidyItem.h in Headers */,
+				0A1B7EE9169B7A6400B4418A /* GW2SpidyType.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A4B24401677F7EA0000E91E /* gw2spidycore-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A4B24521677F7EA0000E91E /* Build configuration list for PBXNativeTarget "gw2spidycore-OSX" */;
+			buildPhases = (
+				0A4B243D1677F7EA0000E91E /* Sources */,
+				0A4B243E1677F7EA0000E91E /* Frameworks */,
+				0A4B243F1677F7EA0000E91E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gw2spidycore-OSX";
+			productName = "gw2spidycore-OSX";
+			productReference = 0A4B24411677F7EA0000E91E /* libgw2spidycore-OSX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0A4B24571677F7F90000E91E /* gw2spidycore-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A4B24621677F7F90000E91E /* Build configuration list for PBXNativeTarget "gw2spidycore-iOS" */;
+			buildPhases = (
+				0A4B24541677F7F90000E91E /* Sources */,
+				0A4B24551677F7F90000E91E /* Frameworks */,
+				0A4B24561677F7F90000E91E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gw2spidycore-iOS";
+			productName = "gw2spidycore-iOS";
+			productReference = 0A4B24581677F7F90000E91E /* libgw2spidycore-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A4B242A1677F7A80000E91E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 0A4B242D1677F7A80000E91E /* Build configuration list for PBXProject "GW2SpidyCore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0A4B24281677F7A80000E91E;
+			productRefGroup = 0A4B24421677F7EA0000E91E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0AF322181677FD5A007401B1 /* Products */;
+					ProjectRef = 0AF322171677FD5A007401B1 /* RestKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0A4B24401677F7EA0000E91E /* gw2spidycore-OSX */,
+				0A4B24571677F7F90000E91E /* gw2spidycore-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0AF322221677FD5A007401B1 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 0AF322211677FD5A007401B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0AF322241677FD5A007401B1 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = 0AF322231677FD5A007401B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0AF322261677FD5A007401B1 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 0AF322251677FD5A007401B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0AF322281677FD5A007401B1 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = 0AF322271677FD5A007401B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A4B243D1677F7EA0000E91E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A619A00167BD65B0031D3C2 /* GW2SpidyClient.m in Sources */,
+				0A619A10167BDA440031D3C2 /* GW2SpidyObject.m in Sources */,
+				0A355021169B2F6C0000A40B /* GW2SpidyItem.m in Sources */,
+				0A1B7EEA169B7A6400B4418A /* GW2SpidyType.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A4B24541677F7F90000E91E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A619A01167BD65B0031D3C2 /* GW2SpidyClient.m in Sources */,
+				0A619A11167BDA440031D3C2 /* GW2SpidyObject.m in Sources */,
+				0A355022169B2F6C0000A40B /* GW2SpidyItem.m in Sources */,
+				0A1B7EEB169B7A6400B4418A /* GW2SpidyType.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0A4B242F1677F7A80000E91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		0A4B24301677F7A80000E91E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		0A4B24501677F7EA0000E91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gw2spidycore-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"${SRCROOT}/dependencies/**\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0A4B24511677F7EA0000E91E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gw2spidycore-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"${SRCROOT}/dependencies/**\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0A4B24631677F7F90000E91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/gw2spidycore_iOS.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gw2spidycore-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0A4B24641677F7F90000E91E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/gw2spidycore_iOS.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gw2spidycore-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A4B242D1677F7A80000E91E /* Build configuration list for PBXProject "GW2SpidyCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4B242F1677F7A80000E91E /* Debug */,
+				0A4B24301677F7A80000E91E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A4B24521677F7EA0000E91E /* Build configuration list for PBXNativeTarget "gw2spidycore-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4B24501677F7EA0000E91E /* Debug */,
+				0A4B24511677F7EA0000E91E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A4B24621677F7F90000E91E /* Build configuration list for PBXNativeTarget "gw2spidycore-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4B24631677F7F90000E91E /* Debug */,
+				0A4B24641677F7F90000E91E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A4B242A1677F7A80000E91E /* Project object */;
+}
