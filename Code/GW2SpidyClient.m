@@ -86,6 +86,8 @@ static float GW2SPIDY_API_VERSION                   = 0.9f;
 #pragma mark GW2SpidyManager
 //---------------------------------------------------
 @interface GW2SpidyManager ()
+@property (assign, readwrite, nonatomic) BOOL cacheAllItems;
+@property (copy, nonatomic) NSArray *allItems;
 - (void)registerSpidyResourceClass:(Class)resourceClass;
 @end
 @implementation GW2SpidyManager
@@ -96,6 +98,7 @@ static float GW2SPIDY_API_VERSION                   = 0.9f;
     self = [super initWithHTTPClient:[GW2SpidyClient sharedClient]];
     if(self) {
         [self registerSpidyResourceClass:nil];
+        [self setCacheAllItems:YES];
     }
     return self;
 }
@@ -142,27 +145,53 @@ static float GW2SPIDY_API_VERSION                   = 0.9f;
 #pragma mark Endpoints Categories
 //---------------------------------------------------
 @implementation GW2SpidyManager (Endpoints)
-- (void)temp {
-    [self getObjectsAtPath:@"item/12345"
-                parameters:nil
-                   success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-                       NSLog(@"%@", [[mappingResult array] lastObject]);
-                   }
-                   failure:^(RKObjectRequestOperation *operation, NSError *error) {
-                       NSLog(@"%@", error);
-                   }];
+- (GW2SpidyItem *)searchByID:(NSInteger)objectID {
+    return [self searchByID:objectID error:nil];
 }
-- (void)temp_1 {
+- (GW2SpidyItem *)searchByID:(NSInteger)objectID error:(NSError *__autoreleasing *)error {
     GW2SpidyItem *item = [GW2SpidyItem item];
-    item.objectID = @(12345);
+    item.objectID = @(objectID);
+    
+    NSURLRequest *request = [self requestWithObject:item
+                                             method:RKRequestMethodGET
+                                               path:nil
+                                         parameters:nil];
+    RKHTTPRequestOperation *httpRequest = [[RKHTTPRequestOperation alloc] initWithRequest:request];
+    RKObjectRequestOperation *operation = [[RKObjectRequestOperation alloc] initWithHTTPRequestOperation:httpRequest
+                                                                                     responseDescriptors:self.responseDescriptors];
+    [operation start];
+    [operation waitUntilFinished];
+    if(error) *error = operation.error;
+    return operation.mappingResult.array.lastObject;
+    
+}
+- (void)searchByID:(NSInteger)objectID completion:(void (^)(NSError *, id))completion {
+    void (^finalCompletion)(NSError *, id) = ^ (NSError *error, id object) {
+        if(completion)
+            completion(error, object);
+    };
+    
+    // Search it up!
+    GW2SpidyItem *item = [GW2SpidyItem item];
+    item.objectID = @(objectID);
     [self getObject:item
                path:nil
          parameters:nil
             success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-                NSLog(@"%@", [[mappingResult array] lastObject]);
+                finalCompletion(nil, [[mappingResult array] lastObject]);
             }
             failure:^(RKObjectRequestOperation *operation, NSError *error) {
-                NSLog(@"%@", error);
+                finalCompletion(error, nil);
             }];
+}
+- (void)imageForItem:(GW2SpidyItem *)item completion:(void (^)(id image))completion {
+    
+    NSURLRequest *imageRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:[item imageURLString]]];
+    AFImageRequestOperation *imageOperation = [AFImageRequestOperation imageRequestOperationWithRequest:imageRequest
+                                                                                                success:^(NSImage *image) {
+                                                                                                    if(completion)
+                                                                                                        completion(image);
+                                                                                                }];
+    [imageOperation start];
 }
 @end

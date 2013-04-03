@@ -21,8 +21,8 @@
             priceLastChangedDate,
             maxOfferUnitPrice,
             minSaleUnitPrice,
-            offerAvailability,
-            saleAvailability,
+            demandCount,
+            quantityAvailable,
             gw2dbExternalID,
             salePriceChangeWithinLastHour,
             offerPriceChangeWithinLastHour;
@@ -31,10 +31,21 @@
 #pragma mark Description
 //---------------------------------------------------
 - (NSString *)description {
-    NSMutableString *description = [NSMutableString new];
+    NSUInteger stringLength = 0;
+    NSMutableString *description = [NSMutableString string];
     for(NSString *attribute in [[[self class] mappingAttributes] allValues]) {
-        [description appendFormat:@"\n%@: %@\n", attribute, [self valueForKey:attribute]];
+        NSString *string = [NSString stringWithFormat:@"| %@: %@\n", [attribute stringByPaddingToLength:40
+                                                                                             withString:@" "
+                                                                                        startingAtIndex:0], [self valueForKey:attribute]];
+        [description appendString:string];
+        stringLength = (stringLength < string.length ? string.length : stringLength);
     }
+    
+    NSString *dashedLineString = [@"" stringByPaddingToLength:stringLength
+                                                   withString:@"-"
+                                              startingAtIndex:0];
+    [description insertString:[NSString stringWithFormat:@"\n%@\n[#%@] %@\n%@\n", dashedLineString, self.objectID, self.name, dashedLineString] atIndex:0];
+    [description appendString:dashedLineString];
     
     return description;
 }
@@ -46,8 +57,10 @@
     static NSDictionary *attributes = nil;
     
     if(!attributes) {
-        NSMutableDictionary *baseAttributes = [[super mappingAttributes] mutableCopy];
+        NSMutableDictionary *baseAttributes = [NSMutableDictionary dictionary];
         [baseAttributes addEntriesFromDictionary:@{
+         @"name"                : @"name",
+         @"data_id"             : @"objectID",
          @"rarity"              : @"rarity",
          @"restriction_level"   : @"restrictionLevel",
          @"img"                 : @"imageURLString",
@@ -56,10 +69,11 @@
          @"price_last_changed"  : @"priceLastChangedDate",
          @"max_offer_unit_price": @"maxOfferUnitPrice",
          @"min_sale_unit_price" : @"minSaleUnitPrice",
-         @"offer_availability"  : @"offerAvailability",
+         @"offer_availability"  : @"demandCount",
          @"gw2db_external_id"   : @"gw2dbExternalID",
          @"sale_price_change_last_hour"     : @"salePriceChangeWithinLastHour",
-         @"offer_price_change_last_hour"    : @"offerPriceChangeWithinLastHour"
+         @"offer_price_change_last_hour"    : @"offerPriceChangeWithinLastHour",
+         @"sale_availability"   : @"quantityAvailable"
          }];
         
         attributes = [baseAttributes copy];
@@ -91,5 +105,18 @@
 #pragma mark Class Constructors
 + (GW2SpidyItem *)item {
     return [[self class] new];
+}
+@end
+
+
+#pragma mark -
+#pragma mark All Items Response
+@implementation GW2SpidyAllItemsResponse
++ (RKObjectMapping *)mappingObject {
+    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[self class]];
+    [mapping setSetDefaultValueForMissingAttributes:YES];
+    [mapping setSetNilForMissingRelationships:YES];
+    [mapping addAttributeMappingsFromDictionary:@{@"count" : @"count"}];
+    return mapping;
 }
 @end

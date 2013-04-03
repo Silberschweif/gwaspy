@@ -13,6 +13,20 @@
 		0A355020169B2F6C0000A40B /* GW2SpidyItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A35501E169B2F6C0000A40B /* GW2SpidyItem.h */; };
 		0A355021169B2F6C0000A40B /* GW2SpidyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35501F169B2F6C0000A40B /* GW2SpidyItem.m */; };
 		0A355022169B2F6C0000A40B /* GW2SpidyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35501F169B2F6C0000A40B /* GW2SpidyItem.m */; };
+		0A38143017052C9D00CFAD59 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A38142F17052C9D00CFAD59 /* Cocoa.framework */; };
+		0A38143A17052C9D00CFAD59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A38143817052C9D00CFAD59 /* InfoPlist.strings */; };
+		0A38144317052CBA00CFAD59 /* RestKit.framework in Copy RestKit */ = {isa = PBXBuildFile; fileRef = 0AF322261677FD5A007401B1 /* RestKit.framework */; };
+		0A38144417052CC500CFAD59 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF322261677FD5A007401B1 /* RestKit.framework */; };
+		0A38144517052D2500CFAD59 /* GW2SpidyClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6199FE167BD65B0031D3C2 /* GW2SpidyClient.m */; };
+		0A38144617052D2500CFAD59 /* GW2SpidyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A619A0E167BDA440031D3C2 /* GW2SpidyObject.m */; };
+		0A38144717052D2500CFAD59 /* GW2SpidyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35501F169B2F6C0000A40B /* GW2SpidyItem.m */; };
+		0A38144817052D2500CFAD59 /* GW2SpidyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B7EE8169B7A6400B4418A /* GW2SpidyType.m */; };
+		0A38144917052D3100CFAD59 /* GW2Spidy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A619A02167BD68E0031D3C2 /* GW2Spidy.h */; };
+		0A38144A17052D3100CFAD59 /* GW2SpidyClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6199FD167BD65B0031D3C2 /* GW2SpidyClient.h */; };
+		0A38144B17052D3100CFAD59 /* GW2SpidyObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A619A0D167BDA440031D3C2 /* GW2SpidyObject.h */; };
+		0A38144C17052D3100CFAD59 /* GW2SpidyItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A35501E169B2F6C0000A40B /* GW2SpidyItem.h */; };
+		0A38144D17052D3100CFAD59 /* GW2SpidyType.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1B7EE7169B7A6400B4418A /* GW2SpidyType.h */; };
+		0A3814541705399500CFAD59 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3814531705399500CFAD59 /* SystemConfiguration.framework */; };
 		0A6199FF167BD65B0031D3C2 /* GW2SpidyClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6199FD167BD65B0031D3C2 /* GW2SpidyClient.h */; };
 		0A619A00167BD65B0031D3C2 /* GW2SpidyClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6199FE167BD65B0031D3C2 /* GW2SpidyClient.m */; };
 		0A619A01167BD65B0031D3C2 /* GW2SpidyClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6199FE167BD65B0031D3C2 /* GW2SpidyClient.m */; };
@@ -57,6 +71,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		0A38144217052CAF00CFAD59 /* Copy RestKit */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A38144317052CBA00CFAD59 /* RestKit.framework in Copy RestKit */,
+			);
+			name = "Copy RestKit";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A4B24561677F7F90000E91E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,6 +98,15 @@
 		0A1B7EE8169B7A6400B4418A /* GW2SpidyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GW2SpidyType.m; sourceTree = "<group>"; };
 		0A35501E169B2F6C0000A40B /* GW2SpidyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GW2SpidyItem.h; sourceTree = "<group>"; };
 		0A35501F169B2F6C0000A40B /* GW2SpidyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GW2SpidyItem.m; sourceTree = "<group>"; };
+		0A38142E17052C9D00CFAD59 /* GW2SpidyCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GW2SpidyCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A38142F17052C9D00CFAD59 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0A38143217052C9D00CFAD59 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0A38143317052C9D00CFAD59 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0A38143417052C9D00CFAD59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A38143717052C9D00CFAD59 /* GW2SpidyCore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GW2SpidyCore-Info.plist"; sourceTree = "<group>"; };
+		0A38143917052C9D00CFAD59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A38143B17052C9D00CFAD59 /* GW2SpidyCore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GW2SpidyCore-Prefix.pch"; sourceTree = "<group>"; };
+		0A3814531705399500CFAD59 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		0A4B24411677F7EA0000E91E /* libgw2spidycore-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libgw2spidycore-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4B24581677F7F90000E91E /* libgw2spidycore-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libgw2spidycore-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4B24651677F8580000E91E /* gw2spidycore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gw2spidycore-Prefix.pch"; sourceTree = "<group>"; };
@@ -87,6 +121,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A38142A17052C9D00CFAD59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3814541705399500CFAD59 /* SystemConfiguration.framework in Frameworks */,
+				0A38143017052C9D00CFAD59 /* Cocoa.framework in Frameworks */,
+				0A38144417052CC500CFAD59 /* RestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A4B243E1677F7EA0000E91E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,12 +152,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A38143117052C9D00CFAD59 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A3814531705399500CFAD59 /* SystemConfiguration.framework */,
+				0A38143217052C9D00CFAD59 /* AppKit.framework */,
+				0A38143317052C9D00CFAD59 /* CoreData.framework */,
+				0A38143417052C9D00CFAD59 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0A38143517052C9D00CFAD59 /* GW2SpidyCore */ = {
+			isa = PBXGroup;
+			children = (
+				0A38143617052C9D00CFAD59 /* Supporting Files */,
+			);
+			path = GW2SpidyCore;
+			sourceTree = "<group>";
+		};
+		0A38143617052C9D00CFAD59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A38143717052C9D00CFAD59 /* GW2SpidyCore-Info.plist */,
+				0A38143817052C9D00CFAD59 /* InfoPlist.strings */,
+				0A38143B17052C9D00CFAD59 /* GW2SpidyCore-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0A4B24281677F7A80000E91E = {
 			isa = PBXGroup;
 			children = (
 				0AF322171677FD5A007401B1 /* RestKit.xcodeproj */,
 				0A4B24651677F8580000E91E /* gw2spidycore-Prefix.pch */,
 				0AF3222D1677FE60007401B1 /* Code */,
+				0A38143517052C9D00CFAD59 /* GW2SpidyCore */,
 				0A4B24431677F7EA0000E91E /* Frameworks */,
 				0A4B24421677F7EA0000E91E /* Products */,
 			);
@@ -124,6 +198,7 @@
 			children = (
 				0A4B24411677F7EA0000E91E /* libgw2spidycore-OSX.a */,
 				0A4B24581677F7F90000E91E /* libgw2spidycore-iOS.a */,
+				0A38142E17052C9D00CFAD59 /* GW2SpidyCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +208,8 @@
 			children = (
 				0A619A19167BDC7F0031D3C2 /* CoreData.framework */,
 				0A619A17167BDC6A0031D3C2 /* CoreData.framework */,
+				0A38142F17052C9D00CFAD59 /* Cocoa.framework */,
+				0A38143117052C9D00CFAD59 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,6 +244,18 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0A38142B17052C9D00CFAD59 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A38144917052D3100CFAD59 /* GW2Spidy.h in Headers */,
+				0A38144A17052D3100CFAD59 /* GW2SpidyClient.h in Headers */,
+				0A38144B17052D3100CFAD59 /* GW2SpidyObject.h in Headers */,
+				0A38144C17052D3100CFAD59 /* GW2SpidyItem.h in Headers */,
+				0A38144D17052D3100CFAD59 /* GW2SpidyType.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A4B243F1677F7EA0000E91E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +270,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0A38142D17052C9D00CFAD59 /* GW2SpidyCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A38143F17052C9D00CFAD59 /* Build configuration list for PBXNativeTarget "GW2SpidyCore" */;
+			buildPhases = (
+				0A38142917052C9D00CFAD59 /* Sources */,
+				0A38142A17052C9D00CFAD59 /* Frameworks */,
+				0A38142B17052C9D00CFAD59 /* Headers */,
+				0A38142C17052C9D00CFAD59 /* Resources */,
+				0A38144217052CAF00CFAD59 /* Copy RestKit */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GW2SpidyCore;
+			productName = GW2SpidyCore;
+			productReference = 0A38142E17052C9D00CFAD59 /* GW2SpidyCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		0A4B24401677F7EA0000E91E /* gw2spidycore-OSX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A4B24521677F7EA0000E91E /* Build configuration list for PBXNativeTarget "gw2spidycore-OSX" */;
@@ -243,6 +351,7 @@
 			targets = (
 				0A4B24401677F7EA0000E91E /* gw2spidycore-OSX */,
 				0A4B24571677F7F90000E91E /* gw2spidycore-iOS */,
+				0A38142D17052C9D00CFAD59 /* GW2SpidyCore */,
 			);
 		};
 /* End PBXProject section */
@@ -278,7 +387,29 @@
 		};
 /* End PBXReferenceProxy section */
 
+/* Begin PBXResourcesBuildPhase section */
+		0A38142C17052C9D00CFAD59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A38143A17052C9D00CFAD59 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		0A38142917052C9D00CFAD59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A38144517052D2500CFAD59 /* GW2SpidyClient.m in Sources */,
+				0A38144617052D2500CFAD59 /* GW2SpidyObject.m in Sources */,
+				0A38144717052D2500CFAD59 /* GW2SpidyItem.m in Sources */,
+				0A38144817052D2500CFAD59 /* GW2SpidyType.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A4B243D1677F7EA0000E91E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,7 +434,97 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		0A38143817052C9D00CFAD59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A38143917052C9D00CFAD59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		0A38144017052C9D00CFAD59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GW2SpidyCore/GW2SpidyCore-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "GW2SpidyCore/GW2SpidyCore-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		0A38144117052C9D00CFAD59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GW2SpidyCore/GW2SpidyCore-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "GW2SpidyCore/GW2SpidyCore-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 		0A4B242F1677F7A80000E91E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -440,6 +661,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A38143F17052C9D00CFAD59 /* Build configuration list for PBXNativeTarget "GW2SpidyCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A38144017052C9D00CFAD59 /* Debug */,
+				0A38144117052C9D00CFAD59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0A4B242D1677F7A80000E91E /* Build configuration list for PBXProject "GW2SpidyCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

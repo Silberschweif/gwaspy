@@ -26,8 +26,8 @@
 @property (copy, nonatomic) NSDate   *priceLastChangedDate;
 @property (copy, nonatomic) NSNumber *maxOfferUnitPrice;
 @property (copy, nonatomic) NSNumber *minSaleUnitPrice;
-@property (copy, nonatomic) NSNumber *offerAvailability;
-@property (copy, nonatomic) NSNumber *saleAvailability;
+@property (copy, nonatomic) NSNumber *demandCount;
+@property (copy, nonatomic) NSNumber *quantityAvailable;
 @property (copy, nonatomic) NSNumber *gw2dbExternalID;
 @property (copy, nonatomic) NSNumber *salePriceChangeWithinLastHour;
 @property (copy, nonatomic) NSNumber *offerPriceChangeWithinLastHour;
@@ -35,4 +35,13 @@
 #pragma mark -
 #pragma mark Class Constructors
 + (GW2SpidyItem *)item;
+@end
+
+
+#pragma mark -
+#pragma mark All Items Response
+@interface GW2SpidyAllItemsResponse : GW2SpidyObject
+@property (copy, nonatomic) NSNumber *count;
+@property (copy, nonatomic) NSArray *items;
++ (RKObjectMapping *)mappingObject;
 @end
