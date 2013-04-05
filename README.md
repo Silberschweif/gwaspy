@@ -7,7 +7,7 @@ Using `gwaspy`, you can query all of gw2spidy.com in your Mac or iOS application
 
 Assuming you have the follwing code:
 
-  // Synchronously get item info
+	// Synchronously get item info
     GW2SpidyItem *item = [Spidy searchByID:input.integerValue];
     printf("%s\n\n", [item description].UTF8String);
 
