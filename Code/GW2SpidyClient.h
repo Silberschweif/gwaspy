@@ -11,11 +11,28 @@
 #define Spidy   [GW2SpidyManager sharedManager]
 
 @class GW2SpidyItem;
+
+#pragma mark -
+#pragma mark Spidy Client
+//---------------------------------------------------
+/* The SpidyClient is the workhorse that communicates
+ * with gw2spidy.com.
+ */
 @interface GW2SpidyClient : AFHTTPClient
 + (NSNumber *)APIVersion;
 @end
 
 
+
+
+
+#pragma mark -
+#pragma mark Spidy Manager
+//---------------------------------------------------
+/* The SpidyManager manages a spidy client, as well
+ * as expose endpoints of the service in a convenient
+ * way.
+ */
 @interface GW2SpidyManager : RKObjectManager
 
 #pragma mark -

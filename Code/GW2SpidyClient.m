@@ -82,6 +82,11 @@ static float GW2SPIDY_API_VERSION                   = 0.9f;
 
 
 
+
+
+
+
+
 #pragma mark -
 #pragma mark GW2SpidyManager
 //---------------------------------------------------
